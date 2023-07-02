@@ -1,6 +1,7 @@
 # Grüezi!
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=102)](https://github.com/ellerbrock/open-source-badge/)
 ```
+
 struct Engineer {
     name: String,
     role: String,
@@ -10,7 +11,12 @@ struct Engineer {
 }
 
 impl Engineer {
-    fn new(name: String, role: String,education:String, spoken_languages: Vec<String>, coding_languages: Vec<String>, interests: Vec<String>) -> Engineer {
+    fn new(
+        name: String,
+         role: String,
+         education:String,
+         spoken_languages: Vec<String>,
+         interests: Vec<String>) -> Engineer {
         Engineer {
             name,
             role,
@@ -35,11 +41,17 @@ fn main() {
         String::from("Software Engineer"),
         String::from("B.S. in Mathematics, B.S. in Quantitative Finance, M.S. in Applied Mathematics"),
         vec![String::from("English"), String::from("German")],
-        vec![String::from("Cryptology"), String::from("Parallel systems"), String::from("GPU Acceleration/CUDA"), String::from("High Performance Computing")],
+        vec![
+            String::from("Cryptology"),
+            String::from("Parallel systems"),
+            String::from("GPU Acceleration/CUDA"),
+            String::from("High Performance Computing")],
     );
 
     engineer.print_info();
 }
+
+
 ```
 ## 🔧 Technologies & Tools
 
