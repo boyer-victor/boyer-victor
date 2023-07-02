@@ -6,7 +6,6 @@ struct Engineer {
     role: String,
     education: String,
     spoken_languages: Vec<String>,
-    coding_languages: Vec<String>,
     interests: Vec<String>,
 }
 
@@ -17,7 +16,6 @@ impl Engineer {
             role,
             education,
             spoken_languages,
-            coding_languages,
             interests,
         }
     }
@@ -27,7 +25,6 @@ impl Engineer {
         println!("Role: {}", self.role);
         println!("Education: {}", self.education);
         println!("I can speak: {:?}", self.spoken_languages);
-        println!("I have experience coding with: {:?}", self.coding_languages);
         println!("My interests are: {:?}", self.interests);
     }
 }
